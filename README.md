@@ -1,8 +1,8 @@
 # msd_calc_2d_fft
-Calculation of the mean square displacement for 2D data through Fourier component analysis
-
 
 Calculation of the mean square displacement is simplified through a Fourier component analysis.
+
+Code developed by Jeremy Kach and R. Kailasham.
  
 See: Calandrini et al. École thématique de la Société
     Française de la Neutronique, 12:201-232, 2011. URL: https://www.neutron-sciences.org/articles/sfn/pdf/2011/01/sfn201112010.pdf 
