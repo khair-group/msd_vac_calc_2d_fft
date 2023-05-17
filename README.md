@@ -1,6 +1,6 @@
-# msd_calc_2d_fft
+# msd_vac_calc_2d_fft
 
-Calculation of the mean square displacement is simplified through a Fourier component analysis.
+Calculation of the mean square displacement and velocity autocorrelation is simplified through a Fourier component analysis.
 
 Code developed by Jeremy Kach.
  
