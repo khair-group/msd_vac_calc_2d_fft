@@ -2,14 +2,14 @@
 
 Calculation of the mean square displacement is simplified through a Fourier component analysis.
 
-Code developed by Jeremy Kach and R. Kailasham.
+Code developed by Jeremy Kach.
  
 See: Calandrini et al. École thématique de la Société
     Française de la Neutronique, 12:201-232, 2011. URL: https://www.neutron-sciences.org/articles/sfn/pdf/2011/01/sfn201112010.pdf 
 for theoretical explanation and relevant formulae.
 
 A general code to implement this was written in 
-Python by Jeremy Kach. I have modified the code to handle: 
+Python by Jeremy Kach. RK modified the code to handle: 
                 (a) .mat files imported from MATLAB 
                 (b) 2-dimensional simulation data
                 (c) Averaging over specified particle indices when needed, as opposed to 
