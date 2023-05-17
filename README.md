@@ -29,7 +29,7 @@ Sytntax: [calc_msd_thru_fft.py] [length_of_box] [delta t] [start trim] [end trim
 
 Sample usage, with the input files included in this folder:
 
-calc_msd_thru_fft.py 10. 1. -1 9999999 1 inp_wrp_pos.mat dummy_indices.mat
+calc_msd_thru_fft.py 10. 1. -1 9999999 1 inp_wrp_pos.mat -1
 
 should produce the following files as output:
 
