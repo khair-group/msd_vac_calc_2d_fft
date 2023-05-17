@@ -2,7 +2,7 @@
 
 Calculation of the mean square displacement and velocity autocorrelation is simplified through a Fourier component analysis.
 
-Code developed by Jeremy Kach.
+Codes developed by Jeremy Kach.
  
 See: Calandrini et al. École thématique de la Société
     Française de la Neutronique, 12:201-232, 2011. URL: https://www.neutron-sciences.org/articles/sfn/pdf/2011/01/sfn201112010.pdf 
@@ -14,6 +14,9 @@ Python by Jeremy Kach. RK modified the code to handle:
                 (b) 2-dimensional simulation data
                 (c) Averaging over specified particle indices when needed, as opposed to 
                     averaging over all the particles
+                    
+%%%%%%% Notes on MSD calculation %%%%%%%%%%%%%%%%%%%%%%%%%%                    
+                    
 
 The core-calculations are performed in "displacement.py", while the driver routine "calc_msd_thru_fft.py" performs the unwrapping of the coordinates and passes the appropriate input needed for "displacement.py". A sample usage statement, along with the explanation of the input parameters is given below:
 
@@ -43,5 +46,26 @@ Running the MATLAB code "plot_msd.m" produces a plot of the analytical MSD resul
 NOTE: the .mat files have to be saved using the flag '-v7.3', so that they may be interpreted as HDF5 entities. See
 https://stackoverflow.com/questions/874461/read-mat-files-in-python/19340117#19340117
 for more details.
+
+%%%%%%% Notes on VAC calculation %%%%%%%%%%%%%%%%%%%%%%%%%%        
+
+The core-calculations are performed in "vac_tools.py", while the driver routine "calc_vac_thru_fft.py" performs the unwrapping of the coordinates and passes the appropriate input needed for "vac_tools.py". A sample usage statement is given below:
+
+Sytntax: [calc_vac_thru_fft.py] [length_of_box] [delta t] [start trim] [end trim] [steps] [path to input file] [path to list of indices]
+
+where the various entries retain their definition from the MSD section above.
+
+Sample usage, with the input files included in this folder:
+
+calc_vac_thru_fft.py 10. 1. -1 9999999 1 inp_wrp_pos.mat -1
+
+should produce the following files as output:
+
+msd_tot_from_fft.dat 
+msd_xx_from_fft.dat  
+msd_xy_from_fft.dat  
+msd_yy_from_fft.dat 
+
+Running the MATLAB code "plot_msd.m" produces a plot of the analytical MSD result of a Peruani-Morelli disk, and compares it with the numerically computed result stored in "msd_tot_from_fft.dat"
 
 
