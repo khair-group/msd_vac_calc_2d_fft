@@ -30,9 +30,9 @@ pl_3.Color=[0. 0.7 0.6];
 pl_3.DisplayName='numerical data';
 
 
-D_r=5e-1;
+D_r=3e-1;
 kappa=D_r;
-bet=2e-1;
+bet=5e-1;
 sum_exp=kappa+bet;
 v0=0.1;
 del=0.05;
