@@ -25,9 +25,9 @@ v0=0.1;
 del=0.05;
 mean_vel=v0;
 var_vel_mag=del*del/3;
-D_r=5e-1;
+D_r=3e-1;
 kappa=D_r;
-bet=2e-1;
+bet=5e-1;
 
 vac_imp=importdata('vac_from_fft.dat');
 pl_3=plot(vac_imp(:,1),vac_imp(:,2)./(mean_vel*mean_vel),'o');
