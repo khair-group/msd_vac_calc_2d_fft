@@ -5,6 +5,6 @@ authors:
   given-names: "Jeremy"
 - family-names: "Khair"
   given-names: "Aditya S."
-title: "msd_vac_calc_2d_fft"
+title: "MSD and VAC calculation tool"
 date-released: 2023-05-18
 url: "https://github.com/khair-group/msd_vac_calc_2d_fft"
