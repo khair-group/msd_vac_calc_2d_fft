@@ -2,7 +2,7 @@
 
 Calculation of the mean square displacement and velocity autocorrelation is simplified through a Fourier component analysis.
 
-Codes developed by Jeremy Kach.
+Python codes developed by Jeremy Kach. MATLAB scripts written by R. Kailasham
  
 See: Calandrini et al. École thématique de la Société
     Française de la Neutronique, 12:201-232, 2011. URL: https://www.neutron-sciences.org/articles/sfn/pdf/2011/01/sfn201112010.pdf 
