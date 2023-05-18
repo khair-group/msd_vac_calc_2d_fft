@@ -41,7 +41,7 @@ msd_xx_from_fft.dat
 msd_xy_from_fft.dat  
 msd_yy_from_fft.dat 
 
-Running the MATLAB code "plot_msd.m" produces a plot of the analytical MSD result of a Peruani-Morelli disk, and compares it with the numerically computed result stored in "msd_tot_from_fft.dat"
+Running the MATLAB code "plot_msd.m" produces a plot of the analytical MSD result of a Peruani-Morelli disk [Phys. Rev. Lett., 2007, Vol. 99, 010602], and compares it with the numerically computed result stored in "msd_tot_from_fft.dat"
 
 NOTE: the .mat files have to be saved using the flag '-v7.3', so that they may be interpreted as HDF5 entities. See
 https://stackoverflow.com/questions/874461/read-mat-files-in-python/19340117#19340117
@@ -61,11 +61,8 @@ calc_vac_thru_fft.py 10. 1. -1 9999999 1 inp_wrp_pos.mat -1
 
 should produce the following files as output:
 
-msd_tot_from_fft.dat 
-msd_xx_from_fft.dat  
-msd_xy_from_fft.dat  
-msd_yy_from_fft.dat 
+vac_from_fft.dat 
 
-Running the MATLAB code "plot_msd.m" produces a plot of the analytical MSD result of a Peruani-Morelli disk, and compares it with the numerically computed result stored in "msd_tot_from_fft.dat"
+Running the MATLAB code "plot_vac.m" produces a plot of the analytical MSD result of a Peruani-Morelli disk [Phys. Rev. Lett., 2007, Vol. 99, 010602], and compares it with the numerically computed result stored in "vac_from_fft.dat"
 
 
