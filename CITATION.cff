@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Kach"
+  given-names: "Jeremy"
+- family-names: "Khair"
+  given-names: "Aditya S."
+title: "msd_vac_calc_2d_fft"
+date-released: 2023-05-18
+url: "https://github.com/khair-group/msd_vac_calc_2d_fft"
